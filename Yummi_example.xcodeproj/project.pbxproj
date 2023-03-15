@@ -13,6 +13,9 @@
 		2F0F2A4829B5616900161238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0F2A4629B5616900161238 /* Main.storyboard */; };
 		2F0F2A4A29B5616B00161238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0F2A4929B5616B00161238 /* Assets.xcassets */; };
 		2F0F2A4D29B5616B00161238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0F2A4B29B5616B00161238 /* LaunchScreen.storyboard */; };
+		2F0F2A5929B565AD00161238 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F2A5829B565AD00161238 /* OnBoardingViewController.swift */; };
+		2F0F2A5C29BA045B00161238 /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F2A5B29BA045B00161238 /* OnBoardingCollectionViewCell.swift */; };
+		2F0F2A5E29BA0F1300161238 /* OnBoardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F2A5D29BA0F1300161238 /* OnBoardingSlide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2F0F2A4929B5616B00161238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F0F2A4C29B5616B00161238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F0F2A4E29B5616B00161238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F0F2A5829B565AD00161238 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		2F0F2A5B29BA045B00161238 /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F0F2A5D29BA0F1300161238 /* OnBoardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSlide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,10 @@
 		2F0F2A3F29B5616900161238 /* Yummi_example */ = {
 			isa = PBXGroup;
 			children = (
+				2F0F2A5A29B56E3D00161238 /* Extensions */,
+				2F0F2A5629B5655E00161238 /* CustomViews */,
+				2F0F2A5529B5655200161238 /* Views */,
+				2F0F2A5429B5654900161238 /* Models */,
 				2F0F2A4029B5616900161238 /* AppDelegate.swift */,
 				2F0F2A4229B5616900161238 /* SceneDelegate.swift */,
 				2F0F2A4429B5616900161238 /* ViewController.swift */,
@@ -65,6 +75,45 @@
 				2F0F2A4E29B5616B00161238 /* Info.plist */,
 			);
 			path = Yummi_example;
+			sourceTree = "<group>";
+		};
+		2F0F2A5429B5654900161238 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F0F2A5D29BA0F1300161238 /* OnBoardingSlide.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F0F2A5529B5655200161238 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F0F2A5729B5657200161238 /* OnBoarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F0F2A5629B5655E00161238 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		2F0F2A5729B5657200161238 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				2F0F2A5829B565AD00161238 /* OnBoardingViewController.swift */,
+				2F0F2A5B29BA045B00161238 /* OnBoardingCollectionViewCell.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		2F0F2A5A29B56E3D00161238 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +190,9 @@
 				2F0F2A4529B5616900161238 /* ViewController.swift in Sources */,
 				2F0F2A4129B5616900161238 /* AppDelegate.swift in Sources */,
 				2F0F2A4329B5616900161238 /* SceneDelegate.swift in Sources */,
+				2F0F2A5C29BA045B00161238 /* OnBoardingCollectionViewCell.swift in Sources */,
+				2F0F2A5E29BA0F1300161238 /* OnBoardingSlide.swift in Sources */,
+				2F0F2A5929B565AD00161238 /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +354,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "YAKSE.Yummi-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,6 +385,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "YAKSE.Yummi-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
